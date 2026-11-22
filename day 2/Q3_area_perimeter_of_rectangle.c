@@ -1,13 +1,14 @@
+// write a program to convert the temperature from celsius to fahrenite
+
 #include <stdio.h>
 
-int main(){
-    int  length, breadth,area,perimeter;
-    //input length and breadth
-    scanf("%d %d", &length,&breadth);
-    
-    area = length*breadth;
-    perimeter =2*(length+breadth);
+int main() // F = (C x 9/5) + 32
+{
+    float c;
+    printf("Enter the temperaturte in celsius:");
+    scanf("%f", &c);
 
-    printf("area = %d\n perimeter = %d\n",area,perimeter);
+    printf("The temperature in Fahrenite is %f", (c * 9 / 5) + 32);
+
     return 0;
 }
